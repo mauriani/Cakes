@@ -24,8 +24,8 @@ const Cart: React.FC = () => {
           <tr key={item.product.id}>
             <td>{item.product.title}</td>
             <td>{item.product.price}</td>
-            <td>{item.quantify}</td>
-            <td>{(item.product.price * item.quantify).toFixed(2)}</td>
+            <td>{item.quantity}</td>
+            <td>{(item.product.price * item.quantity).toFixed(2)}</td>
           </tr>
         ))}
       </tbody>

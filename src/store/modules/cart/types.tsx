@@ -7,7 +7,7 @@ export interface IProduct {
 
 export interface ICartItem {
   product: IProduct;
-  quantify: number;
+  quantity: number;
 }
 
 export interface ICartState {

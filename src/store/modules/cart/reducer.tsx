@@ -8,7 +8,8 @@ const INITIAL_STATE: ICartState = {
 const cart: Reducer<ICartState> = (state = INITIAL_STATE, action) => {
   return producer(state, (draft) => {
     switch (action.type) {
-      case "ADD_PRODUCT_TO_CART": {
+      // SO ADD SE MINHA FUNCTION DE REQUEST TEM SUCESSO
+      case "ADD_PRODUCT_TO_CART_SUCCESS": {
         const { product } = action.payload;
 
         const productInCartIndex = draft.items.findIndex(
@@ -16,11 +17,11 @@ const cart: Reducer<ICartState> = (state = INITIAL_STATE, action) => {
         );
 
         if (productInCartIndex >= 0) {
-          draft.items[productInCartIndex].quantify++;
+          draft.items[productInCartIndex].quantity++;
         } else {
           draft.items.push({
             product,
-            quantify: 1,
+            quantity: 1,
           });
         }
 
