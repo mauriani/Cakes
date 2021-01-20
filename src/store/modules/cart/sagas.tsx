@@ -10,6 +10,7 @@ import {
 
 import api from "../../../services/api";
 import { AxiosResponse } from "axios";
+import { ActionTypes } from "./types";
 
 type CheckProductStockRequest = ReturnType<typeof addProductToCartRequest>;
 
@@ -44,7 +45,7 @@ function* checkProductStock({ payload }: CheckProductStockRequest) {
 // all - função que recebe um array dentro dele
 // select - busca informações do meu state
 export default all([
-  takeLatest("ADD_PRODUCT_TO_CART_REQUEST", checkProductStock),
+  takeLatest(ActionTypes.addProductToCartRequest, checkProductStock),
 ]);
 //pARAMETROS DA FUNÇÃO ACIMA
 // 1-  qual action quero ouvir
