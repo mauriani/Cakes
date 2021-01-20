@@ -5,7 +5,7 @@ export const Container = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  height: 100px;
+  height: 50px;
   background-color: #343a40;
 `;
 
@@ -13,18 +13,19 @@ export const ContainerPages = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 20px;
-
+  justify-content: center;
+  padding: 10px;
+  text-decoration: none;
   img {
-    height: 80px;
-    width: 100px;
+    height: 50px;
+    width: 90px;
   }
 `;
 
 export const ContainerIcons = styled.div`
   display: flex;
   flex-direction: row;
-  padding: 20px;
+  padding: 10px;
 
   div {
     display: flex;
@@ -33,7 +34,7 @@ export const ContainerIcons = styled.div`
 
   strong {
     display: block;
-    font-size: 20px;
+    font-size: 15px;
     color: var(--text-color);
     margin-right: 20;
     font-family: Ubuntu;
@@ -41,7 +42,7 @@ export const ContainerIcons = styled.div`
 `;
 
 export const Title = styled.h6`
-  font-size: 20px;
+  font-size: 15px;
   color: var(--text-color);
   font-weight: bold;
   margin-left: 20px;

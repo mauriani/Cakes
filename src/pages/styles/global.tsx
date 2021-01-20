@@ -12,29 +12,32 @@ export default createGlobalStyle`
 }
 :root {
   --primary-color: #d22746;
-  --title-color: #dcc298;
+  --title-color: #f8f9fa;
   --text-color: #f8f9fa;
 }
 
-body{
-  background-color:#212529
-}
+  body{
+    background-color:#212529
+  }
 
-body,
-input,
-button {
-  font-family: Roboto, Arial, Helvetica, sans-serif;
-}
+  body,
+  input,
+  button {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+  }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+  color: var(--title-color);
   font-family: Ubuntu;
 }
-button {
-  cursor: pointer;
-}
+
+ 
+  button {
+    cursor: pointer;
+  }
 `;

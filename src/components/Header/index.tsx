@@ -11,22 +11,34 @@ const Header: React.FC = () => {
   return (
     <Container>
       <ContainerPages>
-        <Link to="/">
-          <img src={logo} alt="Wine" />
-        </Link>
+        <div>
+          <Link to="/">
+            <img src={logo} alt="Wine" />
+          </Link>
+        </div>
         <Title>Sobre Nós</Title>
-        <Title>Catalógo</Title>
+        <div>
+          <Link to="/catalog">
+            <Title>Catalógo</Title>
+          </Link>
+        </div>
+
         <Title>Onde Comprar ?</Title>
       </ContainerPages>
 
       <ContainerIcons>
         <div>
-          <FaPhoneAlt size={25} color="#fff" style={{ marginRight: 10 }} />
+          <FaPhoneAlt size={23} color="#fff" style={{ marginRight: 10 }} />
           <strong>27 3256-5689</strong>
         </div>
 
-        <IoIosSearch size={25} color="#fff" style={{ marginLeft: 20 }} />
-        <IoIosCart size={25} color="#fff" style={{ marginLeft: 20 }} />
+        <div>
+          <Link to="/cart">
+            <IoIosCart size={23} color="#fff" style={{ marginLeft: 20 }} />
+          </Link>
+        </div>
+
+        <IoIosSearch size={23} color="#fff" style={{ marginLeft: 20 }} />
       </ContainerIcons>
     </Container>
   );
