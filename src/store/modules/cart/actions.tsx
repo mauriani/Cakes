@@ -1,7 +1,5 @@
 import { IProduct } from "./types";
-
 export function addProductToCartRequest(product: IProduct) {
-  // tem que exportar um objeto
   return {
     type: "ADD_PRODUCT_TO_CART_REQUEST",
     payload: {
@@ -9,9 +7,7 @@ export function addProductToCartRequest(product: IProduct) {
     },
   };
 }
-
 export function addProductToCartSuccess(product: IProduct) {
-  // tem que exportar um objeto
   return {
     type: "ADD_PRODUCT_TO_CART_SUCCESS",
     payload: {
@@ -19,10 +15,11 @@ export function addProductToCartSuccess(product: IProduct) {
     },
   };
 }
-
 export function addProductToCartFailure(productId: number) {
-  // tem que exportar um objeto
   return {
     type: "ADD_PRODUCT_TO_CART_FAILURE",
+    payload: {
+      productId,
+    },
   };
 }
