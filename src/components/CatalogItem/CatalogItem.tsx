@@ -24,17 +24,17 @@ const CatalogItem: React.FC<CatalogItemProps> = ({ product }) => {
 
   return (
     <Container>
-      <li>
-        <strong>{product.title}</strong> {" - "}
-        <span>{product.price}</span>
-        {"  "}
+      <div>
+        <img src={product.img} alt="Wine" />
+        <strong>{product.title}</strong>
+        <span>R$ {product.price}</span>
         <button onClick={handleAddProductToCart} type="button">
           Comprar
         </button>
         {hasFailedStockCheck && (
           <span style={{ color: "red" }}>Falta de Estoque</span>
         )}
-      </li>
+      </div>
     </Container>
   );
 };

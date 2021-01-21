@@ -5,7 +5,7 @@ export const Container = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  height: 50px;
+  height: 60px;
   background-color: #343a40;
 `;
 
@@ -19,6 +19,9 @@ export const ContainerPages = styled.div`
   img {
     height: 50px;
     width: 90px;
+  }
+  div {
+    text-decoration: none;
   }
 `;
 
