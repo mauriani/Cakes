@@ -26,7 +26,7 @@ export const ContainerInfo = styled.div`
   h1 {
     font-size: 40px;
     color: var(--text-color);
-    font-family: "Ubuntu_700Bold";
+    font-family: "Cabin";
   }
 
   p {
@@ -34,6 +34,6 @@ export const ContainerInfo = styled.div`
     font-size: 20px;
     color: var(--text-color);
     line-height: 25px;
-    font-family: "Roboto_400Regular";
+    font-family: "Cabin";
   }
 `;

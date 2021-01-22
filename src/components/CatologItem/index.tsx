@@ -4,7 +4,7 @@ import { addProductToCartRequest } from "../../store/modules/cart/actions";
 import { IProduct } from "../../store/modules/cart/types";
 import { IState } from "../../store";
 
-import { Container } from "./styles";
+import { ProductList } from "./styles";
 
 interface CatalogItemProps {
   product: IProduct;
@@ -23,19 +23,19 @@ const CatalogItem: React.FC<CatalogItemProps> = ({ product }) => {
   }, [dispatch, product]);
 
   return (
-    <Container>
-      <div>
-        <img src={product.img} alt="Wine" />
+    <ProductList>
+      <li>
+        <img src={product.img} alt={product.title} />
         <strong>{product.title}</strong>
         <span>R$ {product.price}</span>
         <button onClick={handleAddProductToCart} type="button">
-          Comprar
+          <span>COMPRAR</span>
         </button>
         {hasFailedStockCheck && (
           <span style={{ color: "red" }}>Falta de Estoque</span>
         )}
-      </div>
-    </Container>
+      </li>
+    </ProductList>
   );
 };
 

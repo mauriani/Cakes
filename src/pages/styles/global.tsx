@@ -1,8 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&display=swap');
 
 *{
   margin:0;
@@ -10,10 +9,12 @@ export default createGlobalStyle`
   outline:0;
   box-sizing:border-box
 }
-:root {
+#root {
+  height: 110vh;
   --primary-color: #d22746;
   --title-color: #f8f9fa;
   --text-color: #f8f9fa;
+
 }
 
   body{
@@ -23,7 +24,7 @@ export default createGlobalStyle`
   body,
   input,
   button {
-    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-family: 'Cabin', sans-serif;
   }
 
   h1,
@@ -33,7 +34,7 @@ export default createGlobalStyle`
   h5,
   h6 {
   color: var(--title-color);
-  font-family: Ubuntu;
+  font-family: 'Cabin', sans-serif;
 }
 
  
