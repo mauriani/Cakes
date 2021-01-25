@@ -3,7 +3,9 @@ import api from "../../services/api";
 import { IProduct } from "../../store/modules/cart/types";
 
 import CatalogItem from "../../components/CatologItem";
-import { Container } from "../../components/Header/styles";
+import Container from "../../components/Container";
+
+import { Product } from "./styles";
 
 function Catalog() {
   // Carregando dados da API
@@ -17,9 +19,11 @@ function Catalog() {
 
   return (
     <Container>
-      {catalog.map((product) => (
-        <CatalogItem key={product.id} product={product} />
-      ))}
+      <Product>
+        {catalog.map((product) => (
+          <CatalogItem key={product.id} product={product} />
+        ))}
+      </Product>
     </Container>
   );
 }

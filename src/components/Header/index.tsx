@@ -12,13 +12,13 @@ const Header: React.FC = () => {
     <Container>
       <ContainerPages>
         <div>
-          <Link to="/">
+          <Link to="/" style={{ textDecoration: "none" }}>
             <img src={logo} alt="Wine" />
           </Link>
         </div>
         <Title>Sobre Nós</Title>
         <div>
-          <Link to="/catalog">
+          <Link to="/catalog" style={{ textDecoration: "none" }}>
             <Title>Catalógo</Title>
           </Link>
         </div>

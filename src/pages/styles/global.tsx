@@ -17,6 +17,10 @@ export default createGlobalStyle`
 
 }
 
+html, body, #root{
+    min-height: 100%;
+  }
+
   body{
     background-color:#212529
   }
@@ -32,12 +36,13 @@ export default createGlobalStyle`
   h3,
   h4,
   h5,
-  h6 {
+  h6,
+  strong,
+  span {
   color: var(--title-color);
   font-family: 'Cabin', sans-serif;
 }
 
- 
   button {
     cursor: pointer;
   }

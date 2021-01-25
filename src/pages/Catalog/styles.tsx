@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-  display: flex;
-  flex: 1;
+export const Product = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  list-style: none;
 `;

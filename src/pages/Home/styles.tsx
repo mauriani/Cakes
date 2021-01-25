@@ -14,7 +14,7 @@ export const Container = styled.div`
   img {
     height: 95vh;
     border-radius: 5px;
-    padding: 10px;
+    padding: 20px;
   }
 `;
 

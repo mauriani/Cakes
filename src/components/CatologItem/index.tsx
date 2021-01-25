@@ -22,17 +22,21 @@ const CatalogItem: React.FC<CatalogItemProps> = ({ product }) => {
     dispatch(addProductToCartRequest(product));
   }, [dispatch, product]);
 
+  console.log(hasFailedStockCheck);
   return (
     <ProductList>
-      <li>
+      <li key={product.id}>
         <img src={product.img} alt={product.title} />
-        <strong>{product.title}</strong>
+        <strong>Produto: {product.title}</strong>
         <span>R$ {product.price}</span>
-        <button onClick={handleAddProductToCart} type="button">
-          <span>COMPRAR</span>
-        </button>
-        {hasFailedStockCheck && (
-          <span style={{ color: "red" }}>Falta de Estoque</span>
+        {hasFailedStockCheck ? (
+          <button type="button" style={{ backgroundColor: "#e85d04" }}>
+            Falta Em Estoque
+          </button>
+        ) : (
+          <button onClick={handleAddProductToCart} type="button">
+            Comprar
+          </button>
         )}
       </li>
     </ProductList>
