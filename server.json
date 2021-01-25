@@ -4,6 +4,8 @@
       "id": 1,
       "title": "Chilean wine",
       "region": "America",
+      "volume": "12%",
+      "quant": "750ml",
       "img": "https://lh3.googleusercontent.com/proxy/kOST3jQESVJEScqZOYXisi8H1gi5bUY7ZuVpmI2ywGFLAxLT978WX7QChZrIoFptPdkWMfePofp3gw_jUtAsztIvAzj-9lShPyD3sWj0sBMvR7sH2V1_RwCAxg1A_VV2SafBaS-riYe_ZuXEK2LGYM7a3UWP9Q",
       "price": 290.9
     },
@@ -11,13 +13,16 @@
       "id": 2,
       "title": "Spanish wines",
       "region": "Espanha",
+      "volume": "13.5% ABV",
       "img": "https://images.vivino.com/thumbs/4UrWgY1LSOCiA-5JnVrx5Q_pb_x960.png",
       "price": 20.9
     },
     {
       "id": 3,
-      "title": "Argentine Wine",
+      "title": "Argentine Winery 70 Anos",
       "region": "Argentina",
+      "volume": "13.5% ABV",
+      "quant": "750ml",
       "img": "https://lh3.googleusercontent.com/proxy/3ZFDNbu7dakJGlGP3oR8FUurOwdD5rtqzvoKi4rJUuvxLvqz5RzohDsJ5trckVSuCplkucig7koCoaWhf8uy007RlUIXXOcOh4sIjXkMKj0i0TSGQjWaeet4zeqNMEv5mY2HrS5hGrM0yYYfR1wAteKYDCooqQ",
       "price": 500.0
     },
@@ -25,13 +30,17 @@
       "id": 4,
       "title": "Wine Italian",
       "region": "Italia",
+      "volume": "13% ABV",
+      "quant": "750ml",
       "img": "https://images.vivino.com/thumbs/7H-_QQIeT7iC8sju9GrYfQ_pb_x960.png",
       "price": 500.0
     },
     {
       "id": 5,
-      "title": "Country-wine",
+      "title": "Gevorklan Winery, '365' ",
       "region": "Brasil",
+      "volume": "12.5% ABV",
+      "quant": "750ml",
       "img": "https://d2uonb1a56l9mc.cloudfront.net/images/content-images/whitemail/0720-new-prop/CompBottle_v2.png",
       "price": 500.0
     },
@@ -39,7 +48,9 @@
       "id": 6,
       "title": "Argentine Wine",
       "region": "Argentina",
-      "img": "https://static.clubeextra.com.br/img/uploads/1/888/575888.png",
+      "volume": "15% ABV",
+      "quant": "750ml",
+      "img": "https://images.vivino.com/thumbs/4UrWgY1LSOCiA-5JnVrx5Q_pb_x960.png",
       "price": 500.0
     }
   ],

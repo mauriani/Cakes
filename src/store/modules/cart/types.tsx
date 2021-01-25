@@ -9,6 +9,9 @@ export interface IProduct {
   id: number;
   img: string;
   title: string;
+  volume: string;
+  region: string;
+  quant: string;
   price: number;
 }
 

@@ -1,32 +1,17 @@
 import styled from "styled-components";
 
 export const ProductList = styled.div`
-  padding: 10px;
   li {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background: #292e33;
     border-radius: 4px;
     padding: 20px;
 
     img {
-      align-self: center;
-      max-width: 200px;
-      height: 200px;
-    }
-
-    strong {
-      font-size: 16px;
-      line-height: 20px;
-      color: #fff;
-      margin-top: 5px;
-    }
-
-    span {
-      color: #fff;
-      font-size: 21px;
-      font-weight: bold;
-      margin: 5px 0 20px;
+      max-width: 220px;
+      height: 220px;
+      margin-left: 20px;
     }
 
     button {
@@ -35,12 +20,15 @@ export const ProductList = styled.div`
       border: 0;
       border-radius: 4px;
       overflow: hidden;
-      margin-top: auto;
       height: 40px;
+      width: 150px;
 
       display: flex;
       align-items: center;
       justify-content: center;
+      margin-top: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
 
       text-transform: uppercase;
       font-size: 16px;
@@ -50,4 +38,38 @@ export const ProductList = styled.div`
       transition: background 0.02s;
     }
   }
+`;
+export const Col = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
+
+export const TitleProduct = styled.text`
+  color: #fff;
+  line-height: 15px;
+  font-size: 16px;
+  padding: 10px;
+`;
+
+export const TitlePrice = styled.text`
+  color: #fff;
+  font-weight: bold;
+  line-height: 15px;
+  font-size: 20px;
+  padding: 10px;
+`;
+
+export const Title = styled.text`
+  color: #fff;
+  line-height: 15px;
+  font-size: 16px;
+  padding: 10px;
+`;
+
+export const Bold = styled.text`
+  color: #dcc298;
+  font-weight: bold;
+  line-height: 13px;
+  font-size: 12px;
 `;
