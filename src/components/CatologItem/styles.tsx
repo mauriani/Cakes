@@ -21,7 +21,7 @@ export const ProductList = styled.div`
       border-radius: 4px;
       overflow: hidden;
       height: 40px;
-      width: 150px;
+      width: auto;
 
       display: flex;
       align-items: center;
@@ -62,7 +62,7 @@ export const TitlePrice = styled.text`
 
 export const Title = styled.text`
   color: #fff;
-  line-height: 15px;
+  line-height: 13px;
   font-size: 16px;
   padding: 10px;
 `;
