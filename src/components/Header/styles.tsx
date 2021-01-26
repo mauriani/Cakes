@@ -18,7 +18,7 @@ export const ContainerPages = styled.div`
   text-decoration: none;
   img {
     height: 100px;
-    width: 50px;
+    width: 150px;
   }
   div {
     text-decoration: none;

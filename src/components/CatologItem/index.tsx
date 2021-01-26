@@ -6,6 +6,7 @@ import { IState } from "../../store";
 
 import {
   ProductList,
+  Row,
   Col,
   TitleProduct,
   Title,
@@ -33,33 +34,35 @@ const CatalogItem: React.FC<CatalogItemProps> = ({ product }) => {
   return (
     <ProductList>
       <li key={product.id}>
-        <img src={product.img} alt={product.title} />
+        <Row>
+          <Col>
+            <img src={product.img} alt={product.title} />
+          </Col>
 
-        <Col>
-          <TitleProduct>{product.title}</TitleProduct>
+          <Col>
+            <TitleProduct>{product.title}</TitleProduct>
+            <Title>
+              <Bold>Região: </Bold>
+              {product.region}
+            </Title>
 
-          <Title>
-            <Bold>Região: </Bold>
-            {product.region}
-          </Title>
+            <Title>
+              <Bold>Volume: </Bold>
+              {product.volume}
+            </Title>
+            <TitlePrice>R$ {product.price}</TitlePrice>
+          </Col>
+        </Row>
 
-          <Title>
-            <Bold>Volume: </Bold>
-            {product.volume}
-          </Title>
-
-          <TitlePrice>R$ {product.price}</TitlePrice>
-
-          {hasFailedStockCheck ? (
-            <button type="button" style={{ backgroundColor: "#e85d04" }}>
-              Falta Em Estoque
-            </button>
-          ) : (
-            <button onClick={handleAddProductToCart} type="button">
-              Comprar
-            </button>
-          )}
-        </Col>
+        {hasFailedStockCheck ? (
+          <button type="button" style={{ backgroundColor: "#e85d04" }}>
+            Falta Em Estoque
+          </button>
+        ) : (
+          <button onClick={handleAddProductToCart} type="button">
+            Comprar
+          </button>
+        )}
       </li>
     </ProductList>
   );

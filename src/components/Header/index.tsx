@@ -16,7 +16,10 @@ const Header: React.FC = () => {
             <img src={logo} alt="Wine" />
           </Link>
         </div>
-        <Title>Sobre Nós</Title>
+        <Link to="/story" style={{ textDecoration: "none" }}>
+          <Title>Sobre Nós</Title>
+        </Link>
+
         <div>
           <Link to="/catalog" style={{ textDecoration: "none" }}>
             <Title>Catalógo</Title>

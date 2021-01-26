@@ -15,6 +15,7 @@ export const Container = styled.div`
     height: 95vh;
     border-radius: 5px;
     padding: 20px;
+    border-radius: 4px;
   }
 `;
 

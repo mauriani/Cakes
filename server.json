@@ -2,11 +2,11 @@
   "products": [
     {
       "id": 1,
-      "title": "Chilean wine",
-      "region": "America",
+      "title": "Combo Chilean wine",
+      "region": "Chile",
       "volume": "12%",
       "quant": "750ml",
-      "img": "https://lh3.googleusercontent.com/proxy/kOST3jQESVJEScqZOYXisi8H1gi5bUY7ZuVpmI2ywGFLAxLT978WX7QChZrIoFptPdkWMfePofp3gw_jUtAsztIvAzj-9lShPyD3sWj0sBMvR7sH2V1_RwCAxg1A_VV2SafBaS-riYe_ZuXEK2LGYM7a3UWP9Q",
+      "img": "https://eagleharbor.wine/imager/uploads/home_winespromo_small_9a8430fc4436d2d69b7efeb66f727a69.png",
       "price": 290.9
     },
     {
@@ -23,7 +23,7 @@
       "region": "Argentina",
       "volume": "13.5% ABV",
       "quant": "750ml",
-      "img": "https://lh3.googleusercontent.com/proxy/3ZFDNbu7dakJGlGP3oR8FUurOwdD5rtqzvoKi4rJUuvxLvqz5RzohDsJ5trckVSuCplkucig7koCoaWhf8uy007RlUIXXOcOh4sIjXkMKj0i0TSGQjWaeet4zeqNMEv5mY2HrS5hGrM0yYYfR1wAteKYDCooqQ",
+      "img": "https://images.vivino.com/thumbs/8BpM34x8Tnis29CP0mzHuw_pb_x600.png",
       "price": 500.0
     },
     {

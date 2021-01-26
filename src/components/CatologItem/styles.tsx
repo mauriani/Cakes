@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ProductList = styled.div`
   li {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background: #292e33;
     border-radius: 4px;
     padding: 20px;
@@ -11,7 +11,6 @@ export const ProductList = styled.div`
     img {
       max-width: 220px;
       height: 220px;
-      margin-left: 20px;
     }
 
     button {
@@ -27,8 +26,8 @@ export const ProductList = styled.div`
       align-items: center;
       justify-content: center;
       margin-top: 10px;
-      margin-left: 10px;
-      margin-right: 10px;
+      margin-left: 30px;
+      margin-right: 30px;
 
       text-transform: uppercase;
       font-size: 16px;
@@ -39,6 +38,11 @@ export const ProductList = styled.div`
     }
   }
 `;
+export const Row = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
 export const Col = styled.div`
   display: flex;
   flex-direction: column;
@@ -53,18 +57,20 @@ export const TitleProduct = styled.text`
 `;
 
 export const TitlePrice = styled.text`
-  color: #fff;
+  color: #dcc298;
   font-weight: bold;
   line-height: 15px;
   font-size: 20px;
-  padding: 10px;
+  padding: 0 16px;
+  margin-top: 30px;
 `;
 
 export const Title = styled.text`
   color: #fff;
   line-height: 13px;
   font-size: 16px;
-  padding: 10px;
+  padding: 0 10px;
+  margin-top: 20px;
 `;
 
 export const Bold = styled.text`
