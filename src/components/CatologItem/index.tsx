@@ -4,15 +4,7 @@ import { addProductToCartRequest } from "../../store/modules/cart/actions";
 import { IProduct } from "../../store/modules/cart/types";
 import { IState } from "../../store";
 
-import {
-  ProductList,
-  Row,
-  Col,
-  TitleProduct,
-  Title,
-  Bold,
-  TitlePrice,
-} from "./styles";
+import { ProductList, Product } from "./styles";
 
 interface CatalogItemProps {
   product: IProduct;
@@ -30,29 +22,23 @@ const CatalogItem: React.FC<CatalogItemProps> = ({ product }) => {
     dispatch(addProductToCartRequest(product));
   }, [dispatch, product]);
 
-  console.log(hasFailedStockCheck);
+  console.log(product);
   return (
     <ProductList>
-      <li key={product.id}>
-        <Row>
-          <Col>
-            <img src={product.img} alt={product.title} />
-          </Col>
+      <li>
+        <Product>
+          <img src={product.img} alt={product.title} />
 
-          <Col>
-            <TitleProduct>{product.title}</TitleProduct>
-            <Title>
-              <Bold>Região: </Bold>
-              {product.region}
-            </Title>
+          <div>
+            <text>Title {product.title}</text>
 
-            <Title>
-              <Bold>Volume: </Bold>
-              {product.volume}
-            </Title>
-            <TitlePrice>R$ {product.price}</TitlePrice>
-          </Col>
-        </Row>
+            <strong>Região {product.region}</strong>
+
+            <strong>Volume {product.volume}</strong>
+
+            <strong>R$ {product.price}</strong>
+          </div>
+        </Product>
 
         {hasFailedStockCheck ? (
           <button type="button" style={{ backgroundColor: "#e85d04" }}>

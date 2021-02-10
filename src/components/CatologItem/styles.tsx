@@ -8,11 +8,6 @@ export const ProductList = styled.div`
     border-radius: 4px;
     padding: 20px;
 
-    img {
-      max-width: 220px;
-      height: 220px;
-    }
-
     button {
       background-color: var(--primary-color);
 
@@ -38,44 +33,31 @@ export const ProductList = styled.div`
     }
   }
 `;
-export const Row = styled.div`
-  display: flex;
-  flex-direction: row;
-`;
 
-export const Col = styled.div`
+export const Product = styled.div`
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
-`;
 
-export const TitleProduct = styled.text`
-  color: #fff;
-  line-height: 15px;
-  font-size: 16px;
-  padding: 10px;
-`;
+  img {
+    max-width: 120px;
+    height: 120px;
+  }
+  div {
+    margin-left: 50px;
 
-export const TitlePrice = styled.text`
-  color: #dcc298;
-  font-weight: bold;
-  line-height: 15px;
-  font-size: 20px;
-  padding: 0 16px;
-  margin-top: 30px;
-`;
+    text {
+      font: 700 1rem Archivo;
+      font-size: 1rem;
+      line-height: 1.6rem;
+      color: #fff;
+    }
 
-export const Title = styled.text`
-  color: #fff;
-  line-height: 13px;
-  font-size: 16px;
-  padding: 0 10px;
-  margin-top: 20px;
-`;
-
-export const Bold = styled.text`
-  color: #dcc298;
-  font-weight: bold;
-  line-height: 13px;
-  font-size: 12px;
+    strong {
+      font: 400 1rem Archivo;
+      display: block;
+      color: #fff;
+      line-height: 1.6rem;
+    }
+  }
 `;

@@ -3,7 +3,7 @@ import { Provider } from "react-redux";
 import { Router } from "react-router-dom";
 
 import Header from "./components/Header";
-import GlobalStyle from "./pages/styles/global";
+import GlobalStyle from "./assets/styles/global";
 
 import history from "./services/history";
 import store from "./store";
