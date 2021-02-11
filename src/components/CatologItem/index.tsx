@@ -18,6 +18,7 @@ const CatalogItem: React.FC<CatalogItemProps> = ({ product }) => {
     return state.cart.failedStockCheck.includes(product.id);
   });
 
+  // Adiciona produto ao carrinho
   const handleAddProductToCart = useCallback(() => {
     dispatch(addProductToCartRequest(product));
   }, [dispatch, product]);
