@@ -1,17 +1,24 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-export const Container = styled.header`
+export const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 50px 0;
+  height: 70px;
+  background-color: #343a40;
+
+  img {
+    height: 80px;
+    width: 80px;
+  }
 `;
 
 export const Cart = styled(Link)`
   display: flex;
   align-items: center;
   text-decoration: none;
+  padding: 10px;
 
   transition: opacity 0.2s;
   &:hover {
@@ -26,9 +33,10 @@ export const Cart = styled(Link)`
   strong {
     display: block;
     color: #fff;
+    font: 700 1rem Archivo;
   }
   span {
-    font-size: 12px;
     color: #999;
+    font: 400 1rem Archivo;
   }
 `;

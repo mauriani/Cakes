@@ -5,6 +5,8 @@ import { IProduct } from "../../store/modules/cart/types";
 import CatalogItem from "../../components/CatologItem";
 import Container from "../../components/Container";
 
+import { formatPrice } from "../../util/index";
+
 import { Product } from "./styles";
 
 function Catalog() {
@@ -12,10 +14,20 @@ function Catalog() {
   const [catalog, setCatalog] = useState<IProduct[]>([]);
 
   useEffect(() => {
-    api.get("/products").then((response) => {
-      setCatalog(response.data);
-    });
+    /** exibi products */
+    async function loadProducts() {
+      const response = await api.get("products");
+
+      const data = response.data.map((catalog: IProduct) => ({
+        ...catalog,
+        priceFormatted: formatPrice(catalog.price),
+      }));
+      setCatalog(data);
+    }
+    loadProducts();
   }, []);
+
+  console.log(catalog);
 
   return (
     <Container>

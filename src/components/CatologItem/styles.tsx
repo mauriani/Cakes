@@ -18,7 +18,7 @@ export const ProductList = styled.div`
     strong {
       margin-top: 10px;
       padding: 0 16px;
-      font: 400 1rem Archivo;
+      font: 700 1rem Archivo;
       font-size: 1rem;
       line-height: 1.6rem;
       color: var(--color-text-title);

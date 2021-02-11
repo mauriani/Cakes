@@ -13,6 +13,7 @@ export interface IProduct {
   category: string;
   quant: string;
   price: number;
+  priceFormatted: number;
 }
 
 export interface ICartItem {

@@ -22,7 +22,6 @@ const CatalogItem: React.FC<CatalogItemProps> = ({ product }) => {
     dispatch(addProductToCartRequest(product));
   }, [dispatch, product]);
 
-  console.log(product);
   return (
     <ProductList>
       <li>
@@ -32,7 +31,7 @@ const CatalogItem: React.FC<CatalogItemProps> = ({ product }) => {
 
         <legend>{product.details}</legend>
 
-        <span>R$ {product.price}</span>
+        <span>{product.priceFormatted}</span>
 
         {hasFailedStockCheck ? (
           <button type="button" style={{ backgroundColor: "#e85d04" }}>
