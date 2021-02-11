@@ -12,9 +12,11 @@ export default createGlobalStyle`
 #root {
   height: 110vh;
   --color-background:#191920;
+  --color-background-secondary: #1e222b;
   --color-text-title: #ffffff;
   --color-button-text: #ffffff;
   --color-primary: #8257e5;
+ 
 
 }
 

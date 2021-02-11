@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import api from "../../services/api";
 import { IProduct } from "../../store/modules/cart/types";
 
+import Header from "../../components/Header";
 import CatalogItem from "../../components/CatologItem";
 import Container from "../../components/Container";
 
@@ -30,13 +31,16 @@ function Catalog() {
   console.log(catalog);
 
   return (
-    <Container>
-      <Product>
-        {catalog.map((product) => (
-          <CatalogItem key={product.id} product={product} />
-        ))}
-      </Product>
-    </Container>
+    <>
+      <Header />
+      <Container>
+        <Product>
+          {catalog.map((product) => (
+            <CatalogItem key={product.id} product={product} />
+          ))}
+        </Product>
+      </Container>
+    </>
   );
 }
 

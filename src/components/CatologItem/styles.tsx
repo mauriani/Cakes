@@ -4,7 +4,7 @@ export const ProductList = styled.div`
   li {
     display: flex;
     flex-direction: column;
-    background: #1e222b;
+    background: var(--color-background-secondary);
     border-radius: 4px;
     padding: 20px;
 

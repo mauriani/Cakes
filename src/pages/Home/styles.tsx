@@ -1,40 +1,65 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 100%;
-  height: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 20px;
+  width: 100vw;
+  height: 100vh;
 
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  justify-content: space-between;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 50vw;
+    padding: 10px;
+
+    h2 {
+      text-align: initial;
+      font-size: 3.6rem;
+      color: var(--color-text-title);
+      padding: 0 16px;
+      font-family: "Archivo_400Regular";
+    }
+
+    p {
+      text-align: initial;
+      margin-top: 10px;
+      padding: 0 20px;
+      color: var(--color-text-title);
+      font: 1rem Archivo;
+      line-height: 1.5rem;
+    }
+
+    .acc-catalog {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .acc-catalog a {
+      width: 260px;
+      height: 56px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background-color: var(--color-primary);
+      text-decoration: none;
+      border-radius: 0.8rem;
+
+      text-decoration: none;
+      color: #fff;
+      font: 1rem Archivo;
+
+      transition: background-color 0.2s;
+    }
+  }
 
   img {
-    height: 95vh;
-    border-radius: 5px;
-    padding: 20px;
-    border-radius: 4px;
-  }
-`;
-
-export const ContainerInfo = styled.div`
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-
-  h1 {
-    font-size: 40px;
-    color: var(--text-color);
-    font-family: "Cabin";
-  }
-
-  p {
-    margin-top: 30px;
-    font-size: 20px;
-    color: var(--text-color);
-    line-height: 25px;
-    font-family: "Cabin";
+    width: auto;
   }
 `;
