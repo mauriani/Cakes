@@ -1,7 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { MdRemoveCircleOutline, MdAddCircleOutline } from "react-icons/md";
-import Header from "../../components/Header";
 import { IState } from "../../store";
 import {
   ICartItem,
@@ -29,7 +28,6 @@ const Cart: React.FC = () => {
 
   return (
     <>
-      <Header />
       <Container>
         <ProductTable>
           <table>
