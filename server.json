@@ -2,56 +2,103 @@
   "products": [
     {
       "id": 1,
-      "title": "Combo Chilean wine",
-      "region": "Chile",
-      "volume": "12%",
-      "quant": "750ml",
-      "img": "https://eagleharbor.wine/imager/uploads/home_winespromo_small_9a8430fc4436d2d69b7efeb66f727a69.png",
-      "price": 290.9
+      "category": "traditional",
+      "title": "Cake - Abacaxi com chocolate branco",
+      "details": "Pedacinhos do abacaxi caramelizados fazem toda a diferença em cada pedaço.",
+      "price": 50.0,
+      "image": "https://images.unsplash.com/photo-1604413191066-4dd20bedf486?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=620&q=80"
     },
     {
       "id": 2,
-      "title": "Spanish wines",
-      "region": "Espanha",
-      "volume": "13.5% ABV",
-      "img": "https://images.vivino.com/thumbs/4UrWgY1LSOCiA-5JnVrx5Q_pb_x960.png",
-      "price": 20.9
+      "category": "traditional",
+      "title": "Cake - Morango com chocolate branco",
+      "details": "Junto com o naked cake, sirva uma calda, para deixar o bolo úmido e ainda mais gostoso.",
+      "price": 49.9,
+      "image": "https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=401&q=80"
     },
     {
       "id": 3,
-      "title": "Argentine Winery 70 Anos",
-      "region": "Argentina",
-      "volume": "13.5% ABV",
-      "quant": "750ml",
-      "img": "https://images.vivino.com/thumbs/8BpM34x8Tnis29CP0mzHuw_pb_x600.png",
-      "price": 500.0
+      "category": "traditional",
+      "title": "CupCake de Leite condensado de leite de coco",
+      "details": "Feito à base leite condensado, creme de leite, leite de coco e leite em pó, um combinação perfeita.",
+      "price": 62.0,
+      "image": "https://images.unsplash.com/photo-1607478900766-efe13248b125?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1492&q=80"
     },
     {
       "id": 4,
-      "title": "Wine Italian",
-      "region": "Italia",
-      "volume": "13% ABV",
-      "quant": "750ml",
-      "img": "https://images.vivino.com/thumbs/7H-_QQIeT7iC8sju9GrYfQ_pb_x960.png",
-      "price": 500.0
+      "category": "traditional",
+      "title": "Cake - Brigadeiro de morango",
+      "details": "Com um ingrediente secreto é um pozinho mágico, aproveite esse cake!.",
+      "price": 55.9,
+      "image": "https://images.unsplash.com/photo-1589119908995-c6837fa14848?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=500&q=80"
     },
     {
       "id": 5,
-      "title": "Gevorklan Winery, '365' ",
-      "region": "Brasil",
-      "volume": "12.5% ABV",
-      "quant": "750ml",
-      "img": "https://d2uonb1a56l9mc.cloudfront.net/images/content-images/whitemail/0720-new-prop/CompBottle_v2.png",
-      "price": 500.0
+      "category": "traditional",
+      "title": "Cake - Creme de avelã",
+      "details": "Um bolo de chocolate com ganache é um sabor bem marcante!",
+      "price": 60.5,
+      "image": "https://images.unsplash.com/photo-1569929232526-d9c6578e1531?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=500&q=80"
     },
     {
       "id": 6,
-      "title": "Argentine Wine",
-      "region": "Argentina",
-      "volume": "15% ABV",
-      "quant": "750ml",
-      "img": "https://images.vivino.com/thumbs/4UrWgY1LSOCiA-5JnVrx5Q_pb_x960.png",
-      "price": 500.0
+      "category": "traditional",
+      "title": "Cake - Creme de chocolate",
+      "details": "Um bolo de Creme de chocolate com um sabor bem marcante!",
+      "price": 60.5,
+      "image": "https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=647&q=80"
+    },
+    {
+      "id": 7,
+      "category": "traditional",
+      "title": "Torta de Ameixa",
+      "details": "O bolo de ameixa tem, em sua composição, canela e noz moscada.",
+      "price": 39.9,
+      "image": "https://images.unsplash.com/photo-1525151498231-bc059cfafa2b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+    },
+
+    {
+      "id": 8,
+      "category": "themed",
+      "title": "Bolo Unicórnio",
+      "details": "Um bolo úmido e com uma camada espessa de chantilly.",
+      "price": 60.0,
+      "image": "https://s2.glbimg.com/XiTUs5F-S2EDTkqOVMRy5euUY28=/smart/e.glbimg.com/og/ed/f/original/2019/05/27/bolo-de-unicornio_2.jpg"
+    },
+
+    {
+      "id": 9,
+      "category": "themed",
+      "title": "Bolo Ovelha",
+      "details": "Um bolo de coco com uma camada espessa de chantilly.",
+      "price": 70.0,
+      "image": "https://i.pinimg.com/originals/44/cc/45/44cc457ff4e697c2eb4b0b5fddde00a6.jpg"
+    },
+
+    {
+      "id": 10,
+      "category": "themed",
+      "title": "Bolo Netflix",
+      "details": "Um bolo úmido e ainda mais gostoso.",
+      "price": 60.9,
+      "image": "https://i.pinimg.com/236x/7b/e3/29/7be32927a92a146f450910906916f8fb.jpg"
+    },
+
+    {
+      "id": 11,
+      "category": "themed",
+      "title": "Bolo Harry Potter",
+      "details": "Um bolo úmido e ainda mais gostoso.",
+      "price": 90.9,
+      "image": "https://i.pinimg.com/236x/80/70/e6/8070e6f9e3f85e0d48179ea7920b41cd.jpg"
+    },
+    {
+      "id": 12,
+      "category": "themed",
+      "title": "Bolo Raposa",
+      "details": "Um bolo úmido e ainda mais gostoso.",
+      "price": 80.9,
+      "image": "https://i.pinimg.com/564x/06/0b/e6/060be690f774ac322882fa00108f413a.jpg"
     }
   ],
   "stock": [
@@ -77,6 +124,38 @@
     },
     {
       "id": 6,
+      "quantity": 1
+    },
+
+    {
+      "id": 7,
+      "quantity": 1
+    },
+
+    {
+      "id": 7,
+      "quantity": 1
+    },
+
+    {
+      "id": 8,
+      "quantity": 1
+    },
+
+    {
+      "id": 9,
+      "quantity": 3
+    },
+    {
+      "id": 10,
+      "quantity": 1
+    },
+    {
+      "id": 11,
+      "quantity": 1
+    },
+    {
+      "id": 12,
       "quantity": 1
     }
   ]

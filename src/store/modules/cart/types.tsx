@@ -7,10 +7,10 @@ export enum ActionTypes {
 }
 export interface IProduct {
   id: number;
-  img: string;
+  image: string;
   title: string;
-  volume: string;
-  region: string;
+  details: string;
+  category: string;
   quant: string;
   price: number;
 }

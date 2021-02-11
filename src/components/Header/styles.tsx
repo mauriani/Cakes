@@ -1,52 +1,34 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
-export const Container = styled.div`
+export const Container = styled.header`
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: space-between;
-  height: 60px;
-  background-color: #343a40;
-`;
-
-export const ContainerPages = styled.div`
-  display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  padding: 10px;
-  text-decoration: none;
-  img {
-    height: 100px;
-    width: 150px;
-  }
-  div {
-    text-decoration: none;
-  }
+  margin: 50px 0;
 `;
 
-export const ContainerIcons = styled.div`
+export const Cart = styled(Link)`
   display: flex;
-  flex-direction: row;
-  padding: 10px;
+  align-items: center;
+  text-decoration: none;
+
+  transition: opacity 0.2s;
+  &:hover {
+    opacity: 0.7;
+  }
 
   div {
-    display: flex;
-    flex-direction: row;
+    text-align: right;
+    margin-right: 10px;
   }
 
   strong {
     display: block;
-    font-size: 15px;
-    color: var(--text-color);
-    margin-right: 20;
-    font-family: Ubuntu;
+    color: #fff;
   }
-`;
-
-export const Title = styled.h6`
-  font-size: 15px;
-  color: var(--text-color);
-  font-weight: bold;
-  margin-left: 20px;
+  span {
+    font-size: 12px;
+    color: #999;
+  }
 `;

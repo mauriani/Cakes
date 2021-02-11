@@ -4,7 +4,7 @@ import { addProductToCartRequest } from "../../store/modules/cart/actions";
 import { IProduct } from "../../store/modules/cart/types";
 import { IState } from "../../store";
 
-import { ProductList, Product } from "./styles";
+import { ProductList } from "./styles";
 
 interface CatalogItemProps {
   product: IProduct;
@@ -26,19 +26,13 @@ const CatalogItem: React.FC<CatalogItemProps> = ({ product }) => {
   return (
     <ProductList>
       <li>
-        <Product>
-          <img src={product.img} alt={product.title} />
+        <img src={product.image} alt={product.title} />
 
-          <div>
-            <text>Title {product.title}</text>
+        <strong>{product.title}</strong>
 
-            <strong>Região {product.region}</strong>
+        <legend>{product.details}</legend>
 
-            <strong>Volume {product.volume}</strong>
-
-            <strong>R$ {product.price}</strong>
-          </div>
-        </Product>
+        <span>R$ {product.price}</span>
 
         {hasFailedStockCheck ? (
           <button type="button" style={{ backgroundColor: "#e85d04" }}>

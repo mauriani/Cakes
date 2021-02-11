@@ -11,9 +11,10 @@ export default createGlobalStyle`
 }
 #root {
   height: 110vh;
-  --primary-color: #d22746;
-  --title-color: #f8f9fa;
-  --text-color: #f8f9fa;
+  --color-background:#191920;
+  --color-text-title: #ffffff;
+  --color-button-text: #ffffff;
+  --color-primary: #8257e5;
 
 }
 
@@ -22,27 +23,10 @@ html, body, #root{
   }
 
   body{
-    background-color:#212529
+    background-color:#191920
   }
 
-  body,
-  input,
-  button {
-    font-family: 'Cabin', sans-serif;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  strong,
-  span {
-  color: var(--title-color);
-  font-family: 'Cabin', sans-serif;
-}
-
+ 
   button {
     cursor: pointer;
   }

@@ -1,50 +1,31 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { IoIosCart, IoIosSearch } from "react-icons/io";
-import { FaPhoneAlt } from "react-icons/fa";
+import { useSelector } from "react-redux";
+import { IState } from "../../store";
+import { ICartState } from "../../store/modules/cart/types";
 
-import logo from "../../assets/logo.png";
+import { MdShoppingBasket } from "react-icons/md";
 
-import { Container, ContainerPages, ContainerIcons, Title } from "./styles";
+import { Container, Cart } from "./styles";
+import logo from "../../assets/images/logo.svg";
 
-const Header: React.FC = () => {
+export default function Header() {
+  const cartSize = useSelector<IState, ICartState>((state) => state.cart);
+
+  console.log(cartSize);
+
   return (
     <Container>
-      <ContainerPages>
+      <Link to="/">
+        <img src={logo} alt="Rocketshoes" />
+      </Link>
+      <Cart to="/cart">
         <div>
-          <Link to="/" style={{ textDecoration: "none" }}>
-            <img src={logo} alt="Wine" />
-          </Link>
+          <strong>Meu carrinho</strong>
+          <span>{cartSize} itens</span>
         </div>
-        <Link to="/story" style={{ textDecoration: "none" }}>
-          <Title>Sobre Nós</Title>
-        </Link>
-
-        <div>
-          <Link to="/catalog" style={{ textDecoration: "none" }}>
-            <Title>Catalógo</Title>
-          </Link>
-        </div>
-
-        <Title>Onde Comprar ?</Title>
-      </ContainerPages>
-
-      <ContainerIcons>
-        <div>
-          <FaPhoneAlt size={23} color="#fff" style={{ marginRight: 10 }} />
-          <strong>27 3256-5689</strong>
-        </div>
-
-        <div>
-          <Link to="/cart">
-            <IoIosCart size={23} color="#fff" style={{ marginLeft: 20 }} />
-          </Link>
-        </div>
-
-        <IoIosSearch size={23} color="#fff" style={{ marginLeft: 20 }} />
-      </ContainerIcons>
+        <MdShoppingBasket size={36} color="#fff" />
+      </Cart>
     </Container>
   );
-};
-
-export default Header;
+}

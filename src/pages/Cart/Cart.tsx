@@ -8,8 +8,6 @@ import { Container } from "./styles";
 const Cart: React.FC = () => {
   const cart = useSelector<IState, ICartState>((state) => state.cart);
 
-  console.log("add", cart);
-
   return (
     <Container>
       <table>
