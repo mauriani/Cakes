@@ -9,6 +9,19 @@ export const Container = styled.div`
   margin: 20px auto;
   border-radius: 8px;
 
+  span {
+    padding-top: 50px;
+    text-align: center;
+
+    color: #fff;
+    font: 700 1rem Poppins;
+    display: block;
+
+    div {
+      margin-top: 20px;
+    }
+  }
+
   footer {
     margin-top: 30px;
     display: flex;

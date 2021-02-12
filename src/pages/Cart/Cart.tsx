@@ -1,6 +1,10 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { MdRemoveCircleOutline, MdAddCircleOutline } from "react-icons/md";
+import {
+  MdRemoveCircleOutline,
+  MdAddCircleOutline,
+  MdRemoveShoppingCart,
+} from "react-icons/md";
 
 import { formatPrice } from "../../util/index";
 import { IState } from "../../store";
@@ -32,67 +36,82 @@ const Cart: React.FC = () => {
     formatPrice(product.product.price * product.quantity)
   );
 
+  const totalItems = cart.items.length >= 1;
+  console.log(totalItems);
+
   return (
     <>
-      <Container>
-        <ProductTable>
-          <table>
-            <thead>
-              <tr>
-                <th>Produto</th>
-                <th>Preço</th>
-                <th>Quantidade</th>
-                <th>Subtotal</th>
-              </tr>
-            </thead>
-            <tbody>
-              {cart.items.map((item) => (
-                <tr key={item.product.id}>
-                  <td>
-                    <img src={item.product.image} alt={item.product.title} />
-                  </td>
-
-                  <td>
-                    <strong>{item.product.title}</strong>
-                    <span>{item.product.priceFormatted}</span>
-                  </td>
-
-                  <td>
-                    <div>
-                      <button
-                        type="button"
-                        onClick={() => decrement(item.product, item.quantity)}
-                      >
-                        <MdRemoveCircleOutline size={20} color="#7159c1" />
-                      </button>
-
-                      <input type="number" readOnly value={item.quantity} />
-
-                      <button
-                        type="button"
-                        onClick={() => increment(item.product, item.quantity)}
-                      >
-                        <MdAddCircleOutline size={20} color="#7159c1" />
-                      </button>
-                    </div>
-                  </td>
-
-                  <td>
-                    <span>{subTotal}</span>
-                  </td>
+      <Header />
+      {totalItems === false ? (
+        <Container>
+          <span>
+            Até o momento você não adicionou nenhum item no carrinho !
+            <div>
+              <MdRemoveShoppingCart size={35} color="#7159c1" />
+            </div>
+          </span>
+        </Container>
+      ) : (
+        <Container>
+          <ProductTable>
+            <table>
+              <thead>
+                <tr>
+                  <th>Produto</th>
+                  <th>Preço</th>
+                  <th>Quantidade</th>
+                  <th>Subtotal</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-        </ProductTable>
-        <footer>
-          <button type="button">Finalizar Pedido</button>
-          <Total>
-            <span>Total</span>
-            <strong>{sumTotal}</strong>
-          </Total>
-        </footer>
-      </Container>
+              </thead>
+              <tbody>
+                {cart.items.map((item) => (
+                  <tr key={item.product.id}>
+                    <td>
+                      <img src={item.product.image} alt={item.product.title} />
+                    </td>
+
+                    <td>
+                      <strong>{item.product.title}</strong>
+                      <span>{item.product.priceFormatted}</span>
+                    </td>
+
+                    <td>
+                      <div>
+                        <button
+                          type="button"
+                          onClick={() => decrement(item.product, item.quantity)}
+                        >
+                          <MdRemoveCircleOutline size={20} color="#7159c1" />
+                        </button>
+
+                        <input type="number" readOnly value={item.quantity} />
+
+                        <button
+                          type="button"
+                          onClick={() => increment(item.product, item.quantity)}
+                        >
+                          <MdAddCircleOutline size={20} color="#7159c1" />
+                        </button>
+                      </div>
+                    </td>
+
+                    <td>
+                      <span>{subTotal}</span>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </ProductTable>
+          <footer>
+            <button type="button">Finalizar Pedido</button>
+            <Total>
+              <span>Total</span>
+              <strong>{sumTotal}</strong>
+            </Total>
+          </footer>
+        </Container>
+      )}
     </>
   );
 };

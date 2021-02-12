@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 export const Container = styled.div`
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
 
   height: 70px;
   background-color: #343a40;
 
   .div-img {
-    margin-right: 40px;
     img {
       height: 80px;
       width: 80px;
@@ -18,7 +18,6 @@ export const Container = styled.div`
   }
 
   .div-acc {
-    margin-right: 950px;
   }
 
   .div-acc a {
