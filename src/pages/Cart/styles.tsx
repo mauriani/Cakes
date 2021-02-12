@@ -9,7 +9,7 @@ export const Container = styled.div`
   margin: 20px auto;
   border-radius: 8px;
 
-  span {
+  > span {
     padding-top: 50px;
     text-align: center;
 
@@ -47,7 +47,6 @@ export const Container = styled.div`
 
 export const ProductTable = styled.div`
   width: 100%;
-
   thead th {
     color: #fff;
     text-align: left;
@@ -62,18 +61,21 @@ export const ProductTable = styled.div`
 
   img {
     height: 100px;
+    width: 100px;
     border-radius: 8px;
   }
 
   strong {
     color: #fff;
     font: 500 0.8rem Poppins;
+    display: block;
   }
 
   span {
-    display: block;
     color: #fff;
     font: 500 1rem Poppins;
+    display: block;
+    margin-top: 10px;
   }
 
   div {
