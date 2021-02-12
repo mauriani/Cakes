@@ -6,6 +6,7 @@ export enum ActionTypes {
   addProductToCartFailure = "ADD_PRODUCT_TO_CART_FAILURE",
   updateQuantityRequest = "UPDATE_QUANTITY_REQUEST",
   updateQuantitySuccess = "UPDATE_QUANTITY_SUCCESS",
+  removeFromCart = "REMOVE_FROM_CART",
 }
 export interface IProduct {
   id: number;

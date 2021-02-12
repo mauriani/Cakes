@@ -48,6 +48,20 @@ const cart: Reducer<ICartState> = (state = INITIAL_STATE, action) => {
         break;
       }
 
+      case ActionTypes.removeFromCart: {
+        const { productId } = action.payload;
+
+        const productInCartIndex = draft.items.findIndex(
+          (item) => item.product.id === productId
+        );
+
+        if (productInCartIndex >= 0) {
+          draft.items.slice(productInCartIndex, 1);
+        }
+
+        break;
+      }
+
       default: {
         return draft;
       }

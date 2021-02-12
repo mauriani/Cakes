@@ -12,7 +12,10 @@ import { IState } from "../../store";
 import { ICartState, IProduct } from "../../store/modules/cart/types";
 
 import { Container, ProductTable, Total } from "./styles";
-import { updateQuantityRequest } from "../../store/modules/cart/actions";
+import {
+  removeFromCart,
+  updateQuantityRequest,
+} from "../../store/modules/cart/actions";
 import Header from "../../components/Header";
 
 const Cart: React.FC = () => {
@@ -101,7 +104,12 @@ const Cart: React.FC = () => {
                     </td>
 
                     <td>
-                      <button type="button">
+                      <button
+                        type="button"
+                        onClick={() =>
+                          dispatch(removeFromCart(item.product.id))
+                        }
+                      >
                         <MdDeleteForever size={25} color="#7159c1" />
                       </button>
                     </td>
