@@ -4,6 +4,7 @@ import {
   MdRemoveCircleOutline,
   MdAddCircleOutline,
   MdRemoveShoppingCart,
+  MdDeleteForever,
 } from "react-icons/md";
 
 import { formatPrice } from "../../util/index";
@@ -96,7 +97,13 @@ const Cart: React.FC = () => {
                     </td>
 
                     <td>
-                      <span>{subTotal}</span>
+                      <span></span>
+                    </td>
+
+                    <td>
+                      <button type="button">
+                        <MdDeleteForever size={25} color="#7159c1" />
+                      </button>
                     </td>
                   </tr>
                 ))}

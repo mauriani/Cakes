@@ -47,6 +47,7 @@ export const Container = styled.div`
 
 export const ProductTable = styled.div`
   width: 100%;
+
   thead th {
     color: #fff;
     text-align: left;
@@ -67,14 +68,12 @@ export const ProductTable = styled.div`
   strong {
     color: #fff;
     font: 500 0.8rem Poppins;
-    display: block;
   }
 
   span {
+    display: block;
     color: #fff;
     font: 500 1rem Poppins;
-    display: block;
-    margin-top: 10px;
   }
 
   div {
