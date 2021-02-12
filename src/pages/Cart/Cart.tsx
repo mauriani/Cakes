@@ -8,6 +8,7 @@ import { ICartState, IProduct } from "../../store/modules/cart/types";
 
 import { Container, ProductTable, Total } from "./styles";
 import { updateQuantityRequest } from "../../store/modules/cart/actions";
+import Header from "../../components/Header";
 
 const Cart: React.FC = () => {
   const cart = useSelector<IState, ICartState>((state) => state.cart);

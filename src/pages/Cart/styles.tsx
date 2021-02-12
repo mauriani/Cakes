@@ -1,8 +1,7 @@
 import styled from "styled-components";
+import { darken } from "polished";
 
-export const Container = styled.div``;
-
-export const ProductTable = styled.div`
+export const Container = styled.div`
   background-color: var(--color-background-secondary);
   width: 1000px;
   height: auto;
@@ -10,6 +9,31 @@ export const ProductTable = styled.div`
   margin: 20px auto;
   border-radius: 8px;
 
+  footer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+      background-color: var(--color-primary);
+      color: #fff;
+      border: 0;
+      border-radius: 4px;
+      padding: 12px 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+      transition: background 0.2s;
+
+      &:hover {
+        background: ${darken(0.03, "#8257e5")};
+      }
+    }
+  }
+`;
+
+export const ProductTable = styled.div`
+  width: 100%;
   thead th {
     color: #fff;
     text-align: left;
@@ -59,4 +83,18 @@ export const ProductTable = styled.div`
   }
 `;
 
-export const Total = styled.div``;
+export const Total = styled.div`
+  display: flex;
+  align-items: baseline;
+
+  span {
+    color: var(--color-text-title);
+    font: 700 1rem Archivo;
+  }
+
+  strong {
+    color: var(--color-text-title);
+    font: 400 1.5rem Archivo;
+    margin-left: 5px;
+  }
+`;

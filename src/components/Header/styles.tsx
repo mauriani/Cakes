@@ -5,23 +5,27 @@ export const Container = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
 
   height: 70px;
   background-color: #343a40;
 
-  div {
+  .div-img {
+    margin-right: 40px;
     img {
       height: 80px;
       width: 80px;
     }
+  }
 
-    .acc-catalog {
-      color: #fff;
-      display: block;
-      text-decoration: none;
-      font: 700 1rem Archivo;
-    }
+  .div-acc {
+    margin-right: 950px;
+  }
+
+  .div-acc a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    font: 700 1rem Archivo;
   }
 `;
 
