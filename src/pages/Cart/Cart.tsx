@@ -1,30 +1,35 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { MdRemoveCircleOutline, MdAddCircleOutline } from "react-icons/md";
-import { IState } from "../../store";
-import {
-  ICartItem,
-  ICartState,
-  IProduct,
-} from "../../store/modules/cart/types";
 
-import { Container, ProductTable } from "./styles";
-import { addProductToCartRequest } from "../../store/modules/cart/actions";
+import { formatPrice } from "../../util/index";
+import { IState } from "../../store";
+import { ICartState, IProduct } from "../../store/modules/cart/types";
+
+import { Container, ProductTable, Total } from "./styles";
+import { updateQuantityRequest } from "../../store/modules/cart/actions";
 
 const Cart: React.FC = () => {
   const cart = useSelector<IState, ICartState>((state) => state.cart);
 
-  console.log(cart);
-
   const dispatch = useDispatch();
 
-  function increment(quantity: ICartItem, product: IProduct) {
-    dispatch(addProductToCartRequest(product));
-    console.log(quantity, product.id);
+  function increment(product: IProduct, quantity: number) {
+    dispatch(updateQuantityRequest(product.id, quantity + 1));
   }
-  function decrement(quantity: ICartItem, product: IProduct) {
-    console.log(quantity, product.id);
+  function decrement(product: IProduct, quantity: number) {
+    dispatch(updateQuantityRequest(product.id, quantity - 1));
   }
+
+  let sumTotal = formatPrice(
+    cart.items.reduce((sum, product) => {
+      return sum + product.product.price * product.quantity;
+    }, 0)
+  );
+
+  let subTotal = cart.items.map((product) =>
+    formatPrice(product.product.price * product.quantity)
+  );
 
   return (
     <>
@@ -37,7 +42,6 @@ const Cart: React.FC = () => {
                 <th>Preço</th>
                 <th>Quantidade</th>
                 <th>Subtotal</th>
-                <th>Total</th>
               </tr>
             </thead>
             <tbody>
@@ -56,7 +60,7 @@ const Cart: React.FC = () => {
                     <div>
                       <button
                         type="button"
-                        onClick={() => decrement(item, item.product)}
+                        onClick={() => decrement(item.product, item.quantity)}
                       >
                         <MdRemoveCircleOutline size={20} color="#7159c1" />
                       </button>
@@ -65,7 +69,7 @@ const Cart: React.FC = () => {
 
                       <button
                         type="button"
-                        onClick={() => increment(item, item.product)}
+                        onClick={() => increment(item.product, item.quantity)}
                       >
                         <MdAddCircleOutline size={20} color="#7159c1" />
                       </button>
@@ -73,15 +77,20 @@ const Cart: React.FC = () => {
                   </td>
 
                   <td>
-                    <span>
-                      {(item.product.price * item.quantity).toFixed(2)}
-                    </span>
+                    <span>{subTotal}</span>
                   </td>
                 </tr>
               ))}
             </tbody>
           </table>
         </ProductTable>
+        <footer>
+          <button type="button">Finalizar Pedido</button>
+          <Total>
+            <span>Total</span>
+            <strong>{sumTotal}</strong>
+          </Total>
+        </footer>
       </Container>
     </>
   );

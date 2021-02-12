@@ -17,9 +17,15 @@ const Header: React.FC = () => {
 
   return (
     <Container>
-      <Link to="/">
-        <img src={logo} alt="Wine" />
-      </Link>
+      <div>
+        <Link to="/">
+          <img src={logo} alt="Wine" />
+        </Link>
+
+        <Link to="/catalog" className="acc-catalog">
+          Catalógo
+        </Link>
+      </div>
 
       <Cart to="/cart">
         <div>

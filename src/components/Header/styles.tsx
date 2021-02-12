@@ -3,21 +3,34 @@ import { Link } from "react-router-dom";
 
 export const Container = styled.div`
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+
   height: 70px;
   background-color: #343a40;
 
-  img {
-    height: 80px;
-    width: 80px;
+  div {
+    img {
+      height: 80px;
+      width: 80px;
+    }
+
+    .acc-catalog {
+      color: #fff;
+      display: block;
+      text-decoration: none;
+      font: 700 1rem Archivo;
+    }
   }
 `;
 
 export const Cart = styled(Link)`
   display: flex;
   align-items: center;
+  justify-content: start;
   text-decoration: none;
+
   padding: 10px;
 
   transition: opacity 0.2s;

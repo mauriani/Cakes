@@ -24,3 +24,23 @@ export function addProductToCartFailure(productId: number) {
     },
   };
 }
+
+export function updateQuantityRequest(productId: number, quantity: number) {
+  return {
+    type: ActionTypes.updateQuantityRequest,
+    payload: {
+      productId,
+      quantity,
+    },
+  };
+}
+
+export function updateQuantitySuccess(productId: number, quantity: number) {
+  return {
+    type: ActionTypes.updateQuantitySuccess,
+    payload: {
+      productId,
+      quantity,
+    },
+  };
+}

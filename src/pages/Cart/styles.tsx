@@ -58,3 +58,5 @@ export const ProductTable = styled.div`
     padding: 6px;
   }
 `;
+
+export const Total = styled.div``;

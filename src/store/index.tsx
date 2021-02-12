@@ -8,6 +8,7 @@ import rootReducer from "./modules/rootReducer";
 import { ICartState } from "./modules/cart/types";
 
 export interface IState {
+  state: any;
   cart: ICartState;
 }
 

@@ -34,6 +34,20 @@ const cart: Reducer<ICartState> = (state = INITIAL_STATE, action) => {
         break;
       }
 
+      case ActionTypes.updateQuantitySuccess: {
+        const { productId, quantity } = action.payload;
+
+        const productInCartIndex = draft.items.findIndex(
+          (item) => item.product.id === productId
+        );
+
+        if (productInCartIndex >= 0) {
+          draft.items[productInCartIndex].quantity = quantity;
+        }
+
+        break;
+      }
+
       default: {
         return draft;
       }
