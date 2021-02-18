@@ -1,46 +1,68 @@
-# Getting Started with Create React App
+### Cakes
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Projeto
 
-## Available Scripts
+Essa aplicação foi desenvolvida no bonus do curso GoStack/Bootcamp da **Rocketseat.** O intuito desse módulo foi entender o que é redux e como usar, usei essa aplicação para força o conhecimento sobre redux, o layout foi montado por mim.
 
-In the project directory, you can run:
+### Iniciando a Aplicação
 
-### `yarn start`
+```
+$ git clone <https://github.com/mauriani/RocketShoes-Web>
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Depois disso acesse a pasta de cada do projeto e instale a dependências com o seguinte comando abaixo
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```
+$ yarn install # ou npm install
+```
 
-### `yarn test`
+- Para dá start na aplicação precisamos deixar a api rodando juntamente com o nosso react.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+npx json-server server.json -p 3232
+yarn start
+```
 
-### `yarn build`
+### API
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Para fazermos o processo de manipulação de uma api usamos **JsonServer**. Para usar no projeto precisamos criar um arquivo chamado server.json e ao dá start na aplicação a api tem que está rodando também.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Adicionando a biblioteca
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+yarn global add json-server
 
-### `yarn eject`
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Start
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+npx json-server server.json -p 3333
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Tecnologias utilizadas
 
-## Learn More
+- [x]  React Js
+- [x]  Redux
+- [x]  Redux Saga
+- [x]  Json Server
+- [x]  Reactotron
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## O que é o Redux?
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- O Redux é uma biblioteca para gerenciamento de estado que segue os princípios da arquitetura flux.
+- Redux é um container de estado previsível para aplicações JavaScript.
+
+### **Configuração**
+
+Em nossa aplicação vamos utilizar o redux para controlar todo o processo de adicionar um item ao carrinho, contabilizar quantos itens vamos ter, e até mesmo o total. Quando instalamos o redux vamos disparar um action e ela será responsável por fazer todo os processo. A configuração do processo está descrito abaixo.
+
+### Instalando o Redux
+
+Vamos instalar o redux e pacote de interação entre react e redux.
+
+```
+yarn add redux react-redux
+
+```
