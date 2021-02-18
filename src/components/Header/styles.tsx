@@ -8,23 +8,26 @@ export const Container = styled.div`
   align-items: center;
 
   height: 70px;
-  background-color: #343a40;
+  background-color: var(--color-background-header);
 
-  .div-img {
+  .div-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
     img {
       height: 80px;
       width: 80px;
     }
-  }
 
-  .div-acc {
-  }
-
-  .div-acc a {
-    color: #fff;
-    display: block;
-    text-decoration: none;
-    font: 700 1rem Archivo;
+    a {
+      text-decoration: none;
+      display: block;
+      color: var(--color-text-title);
+      font: 700 1rem Archivo;
+      margin-left: 2rem;
+    }
   }
 `;
 
@@ -48,7 +51,7 @@ export const Cart = styled(Link)`
 
   strong {
     display: block;
-    color: #fff;
+    color: var(--color-text-title);
     font: 700 1rem Archivo;
   }
   span {

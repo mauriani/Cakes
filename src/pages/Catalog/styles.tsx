@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
+export const ContainerHeader = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
 export const Container = styled.div`
   max-width: 1100px;
   border-radius: 4px;

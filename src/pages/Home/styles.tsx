@@ -1,5 +1,11 @@
 import styled from "styled-components";
 
+export const Landing = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
 export const Container = styled.div`
   width: 100vw;
   height: 100vh;
@@ -62,7 +68,6 @@ export const Container = styled.div`
 
   .image {
     width: 50%;
-
     align-self: center;
     padding: 3.2rem 2rem;
 

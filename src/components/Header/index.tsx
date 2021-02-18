@@ -17,13 +17,11 @@ const Header: React.FC = () => {
 
   return (
     <Container>
-      <div className="div-img">
+      <div className="div-link">
         <Link to="/">
           <img src={logo} alt="cake" />
         </Link>
-      </div>
 
-      <div className="div-acc">
         <Link to="/catalog" className="acc-catalog">
           Catalógo
         </Link>
