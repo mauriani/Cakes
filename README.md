@@ -1,8 +1,12 @@
 ### Cakes
 
+<img src="https://user-images.githubusercontent.com/32397288/108389041-041b8680-71ee-11eb-8f5a-706691753d04.png" >
+<img src="https://user-images.githubusercontent.com/32397288/108389397-62e10000-71ee-11eb-9cda-078814550150.png" >
+<img src="https://user-images.githubusercontent.com/32397288/108389587-92900800-71ee-11eb-80b0-a68bf17c87b6.png" >
+
 ### Projeto
 
-Essa aplicação foi desenvolvida no bonus do curso GoStack/Bootcamp da **Rocketseat.** O intuito desse módulo foi entender o que é redux e como usar, usei essa aplicação para força o conhecimento sobre redux, o layout foi montado por mim.
+Essa aplicação foi desenvolvida no bonus do curso GoStack/Bootcamp da **Rocketseat.** . O intuito dessas aulas foi reforçar o uso do redux, a forma de usar é como usar. Foi desenvolvida boa parte durante o módulo, o layout não foi desenvolvida nós tutoriais, o mesmo foi de autoria minha.
 
 ### Iniciando a Aplicação
 
