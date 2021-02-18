@@ -2,7 +2,7 @@
 
 <img src="https://user-images.githubusercontent.com/32397288/108389041-041b8680-71ee-11eb-8f5a-706691753d04.png" >
 <img src="https://user-images.githubusercontent.com/32397288/108389397-62e10000-71ee-11eb-9cda-078814550150.png" >
-<img src="https://user-images.githubusercontent.com/32397288/108389587-92900800-71ee-11eb-80b0-a68bf17c87b6.png" >
+<img src="https://user-images.githubusercontent.com/32397288/108389818-cbc87800-71ee-11eb-8cb8-11ae328bd643.png" >
 
 ### Projeto
 
