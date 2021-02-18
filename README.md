@@ -7,7 +7,7 @@ Essa aplicação foi desenvolvida no bonus do curso GoStack/Bootcamp da **Rocket
 ### Iniciando a Aplicação
 
 ```
-$ git clone <https://github.com/mauriani/RocketShoes-Web>
+$ git clone https://github.com/mauriani/Cakes.git
 ```
 
 - Depois disso acesse a pasta de cada do projeto e instale a dependências com o seguinte comando abaixo
@@ -37,7 +37,7 @@ yarn global add json-server
 Start
 
 ```
-npx json-server server.json -p 3333
+npx json-server server.json -p 3232
 
 ```
 
