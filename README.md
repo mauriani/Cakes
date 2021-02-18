@@ -1,8 +1,8 @@
 ### Cakes
 
 <img src="https://user-images.githubusercontent.com/32397288/108389041-041b8680-71ee-11eb-8f5a-706691753d04.png" >
-<img src="https://user-images.githubusercontent.com/32397288/108389397-62e10000-71ee-11eb-9cda-078814550150.png" >
 <img src="https://user-images.githubusercontent.com/32397288/108389818-cbc87800-71ee-11eb-8cb8-11ae328bd643.png" >
+<img src="https://user-images.githubusercontent.com/32397288/108390008-fca8ad00-71ee-11eb-84d9-125b33357e35.png" >
 
 ### Projeto
 
