@@ -6,7 +6,7 @@
 
 ### Projeto
 
-Essa aplicação foi desenvolvida no bonus do curso GoStack/Bootcamp da **Rocketseat.** . O intuito dessas aulas foi reforçar o uso do redux, a forma de usar é como usar. Foi desenvolvida boa parte durante o módulo, o layout não foi desenvolvida nós tutoriais, o mesmo foi de autoria minha.
+Essa aplicação foi desenvolvida no bonus do curso GoStack/Bootcamp da **Rocketseat.** O intuito dessas aulas foi reforçar o uso do redux, a forma de usar é como usar. Foi desenvolvida boa parte durante o módulo, o layout não foi desenvolvida nós tutoriais, o mesmo foi de autoria minha.
 
 ### Iniciando a Aplicação
 
