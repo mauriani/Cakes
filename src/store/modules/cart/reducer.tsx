@@ -56,7 +56,7 @@ const cart: Reducer<ICartState> = (state = INITIAL_STATE, action) => {
         );
 
         if (productInCartIndex >= 0) {
-          draft.items.slice(productInCartIndex, 1);
+          draft.items.splice(productInCartIndex, 1);
         }
 
         break;

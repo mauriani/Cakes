@@ -13,12 +13,12 @@ export const Container = styled.div`
     flex-direction: column;
     justify-content: center;
 
-    width: 50vw;
+    width: 50%;
     padding: 10px;
 
     h2 {
       text-align: initial;
-      font-size: 3.6rem;
+      font-size: 1.6rem;
       color: var(--color-text-title);
       padding: 0 16px;
       font-family: "Archivo_400Regular";
@@ -60,6 +60,6 @@ export const Container = styled.div`
   }
 
   img {
-    width: auto;
+    width: 50%;
   }
 `;
