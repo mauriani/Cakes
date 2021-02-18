@@ -6,7 +6,7 @@ import { ICartState } from "../../store/modules/cart/types";
 
 import { MdShoppingBasket } from "react-icons/md";
 
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo.svg";
 
 import { Container, Cart } from "./styles";
 

@@ -36,12 +36,7 @@ const Cart: React.FC = () => {
     }, 0)
   );
 
-  let subTotal = cart.items.map((product) =>
-    formatPrice(product.product.price * product.quantity)
-  );
-
   const totalItems = cart.items.length >= 1;
-  console.log(totalItems);
 
   return (
     <>
@@ -64,7 +59,6 @@ const Cart: React.FC = () => {
                   <th>Produto</th>
                   <th>Preço</th>
                   <th>Quantidade</th>
-                  <th>Subtotal</th>
                 </tr>
               </thead>
               <tbody>
@@ -97,10 +91,6 @@ const Cart: React.FC = () => {
                           <MdAddCircleOutline size={20} color="#7159c1" />
                         </button>
                       </div>
-                    </td>
-
-                    <td>
-                      <span></span>
                     </td>
 
                     <td>

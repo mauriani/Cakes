@@ -7,7 +7,7 @@ export const Container = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  height: 70px;
+  height: 9%;
   background-color: var(--color-background-header);
 
   .div-link {
@@ -17,8 +17,8 @@ export const Container = styled.div`
     align-items: center;
 
     img {
-      height: 80px;
-      width: 80px;
+      height: 60px;
+      width: 60px;
     }
 
     a {
