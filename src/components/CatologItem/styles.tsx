@@ -5,8 +5,10 @@ export const ProductList = styled.div`
     display: flex;
     flex-direction: column;
     background: var(--color-background-secondary);
-    border-radius: 4px;
-    padding: 20px;
+
+    margin-top: 1rem;
+    padding: 1rem;
+    overflow: hidden;
 
     img {
       align-self: center;
@@ -16,29 +18,28 @@ export const ProductList = styled.div`
     }
 
     strong {
-      margin-top: 10px;
-      padding: 0 16px;
       font: 700 1rem Archivo;
-      font-size: 1rem;
+      margin-top: 0.8rem;
+      padding: 0 1rem;
       line-height: 1.6rem;
       color: var(--color-text-title);
     }
 
     legend {
-      margin-top: 10px;
-      padding: 0 16px;
+      margin-top: 0.8rem;
+      padding: 0 1rem;
       font: 400 1rem Archivo;
-      font-size: 1rem;
       line-height: 1.6rem;
       padding-bottom: 1.6rem;
       color: var(--color-text-title);
     }
 
     span {
-      margin-top: 10px;
-      padding: 0 16px;
-      font: 700 1rem Archivo;
       display: block;
+
+      margin-top: 0.8rem;
+      padding: 0 1rem;
+      font: 700 1rem Archivo;
       color: var(--color-text-title);
       line-height: 1.6rem;
     }

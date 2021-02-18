@@ -19,15 +19,10 @@ export default createGlobalStyle`
   --color-text-title: #ffffff;
   --color-button-text: #ffffff;
   --color-primary: #8257e5;
+  --color-primary-dark: #774dd6;
  
 
 }
-
-  html,
-  body,
-  #root {
-    height: 100vh;
-  }
 
   body{
     background-color:#191920

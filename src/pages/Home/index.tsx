@@ -9,7 +9,7 @@ const Home: React.FC = () => {
   return (
     <Container>
       <div>
-        <h2>Bolos JuCakes 30 anos a verdadeira arte em bolos</h2>
+        <strong>Bolos JuCakes 30 anos a verdadeira arte em bolos</strong>
         <p>
           It is a long established fact that a reader will be distracted by the
           readable content of a page when looking at its layout. The point of
@@ -21,12 +21,14 @@ const Home: React.FC = () => {
           infancy. Various versions have evolved over the years, sometimes by
           accident, sometimes on purpose (injected humour and the like).
         </p>
-        <div className="acc-catalog">
-          <Link to="/catalog">Acessar Catálogo</Link>
-        </div>
-      </div>
 
-      <img src={cake} alt="cake" />
+        <Link to="/catalog" className="acc-catalog">
+          <button type="button">Acessar Catálogo</button>
+        </Link>
+      </div>
+      <div className="image">
+        <img src={cake} alt="cake" />
+      </div>
     </Container>
   );
 };

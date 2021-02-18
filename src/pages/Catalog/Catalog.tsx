@@ -2,13 +2,12 @@ import React, { useEffect, useState } from "react";
 import api from "../../services/api";
 import { IProduct } from "../../store/modules/cart/types";
 
-import Header from "../../components/Header";
+// import Header from "../../components/Header";
 import CatalogItem from "../../components/CatologItem";
-import Container from "../../components/Container";
 
 import { formatPrice } from "../../util/index";
 
-import { Product } from "./styles";
+import { Container, Product } from "./styles";
 
 function Catalog() {
   // Carregando dados da API
@@ -32,7 +31,6 @@ function Catalog() {
 
   return (
     <>
-      <Header />
       <Container>
         <Product>
           {catalog.map((product) => (
